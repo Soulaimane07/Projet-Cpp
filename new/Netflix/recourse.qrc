@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>C:/Users/Soulaimane/OneDrive/Desktop/login-bg.jpg</file>
+        <file>C:/Users/Soulaimane/OneDrive/Desktop/13-reasons-why.jpg</file>
+        <file>../../../Coding/MTDB/hulu/public/assets/series/cardImg/anne-with-an-e.jpg</file>
+        <file>../../../Coding/MTDB/hulu/public/assets/series/cardImg/breaking-bad.jpg</file>
+        <file>../../../Coding/MTDB/hulu/public/assets/series/cardImg/chernobyl.jfif</file>
+        <file>../../../Coding/MTDB/hulu/public/assets/series/cardImg/got.jfif</file>
+        <file>C:/Users/Soulaimane/OneDrive/Desktop/got.jfif</file>
+        <file>C:/Users/Soulaimane/OneDrive/Desktop/anne-with-an-e.jpg</file>
+        <file>C:/Users/Soulaimane/OneDrive/Desktop/breaking-bad.jpg</file>
+        <file>C:/Users/Soulaimane/OneDrive/Desktop/dark.jpg</file>
+        <file>C:/Users/Soulaimane/OneDrive/Desktop/mr-robot.jpg</file>
+        <file>C:/Users/Soulaimane/OneDrive/Desktop/peaky-blinders.jpg</file>
+        <file>C:/Users/Soulaimane/OneDrive/Desktop/spong.jpg</file>
+        <file>C:/Users/Soulaimane/OneDrive/Desktop/oscars-asis.jpg</file>
+        <file>C:/Users/Soulaimane/OneDrive/Desktop/grizzy.jpg</file>
+        <file>C:/Users/Soulaimane/OneDrive/Desktop/teenTitans.jpg</file>
+        <file>C:/Users/Soulaimane/OneDrive/Desktop/glitch.jpg</file>
+        <file>C:/Users/Soulaimane/OneDrive/Desktop/seep.jpg</file>
+        <file>C:/Users/Soulaimane/OneDrive/Desktop/squid-game.jpg</file>
+        <file>C:/Users/Soulaimane/OneDrive/Desktop/succession.jfif</file>
+        <file>C:/Users/Soulaimane/OneDrive/Desktop/the-100.jpg</file>
+        <file>C:/Users/Soulaimane/OneDrive/Desktop/the-simpsons.jfif</file>
+        <file>C:/Users/Soulaimane/OneDrive/Desktop/dragons.jpg</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>../../../Coding/MTDB/hulu/public/assets/series/cardImg/arcane.jpg</file>
+    </qresource>
+</RCC>

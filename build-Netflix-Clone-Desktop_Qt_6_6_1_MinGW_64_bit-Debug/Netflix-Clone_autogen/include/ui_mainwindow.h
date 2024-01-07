@@ -11,7 +11,9 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 
@@ -21,13 +23,17 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
+    QPushButton *pushButton_2;
+    QLabel *label;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(800, 600);
+        MainWindow->setWindowModality(Qt::NonModal);
+        MainWindow->setEnabled(true);
+        MainWindow->resize(707, 528);
         QPalette palette;
         QBrush brush(QColor(255, 255, 255, 255));
         brush.setStyle(Qt::SolidPattern);
@@ -97,12 +103,42 @@ public:
 #endif
         palette.setBrush(QPalette::Disabled, QPalette::Accent, brush1);
         MainWindow->setPalette(palette);
-        MainWindow->setAutoFillBackground(false);
+        MainWindow->setFocusPolicy(Qt::NoFocus);
+        MainWindow->setContextMenuPolicy(Qt::DefaultContextMenu);
+        MainWindow->setAutoFillBackground(true);
+        MainWindow->setStyleSheet(QString::fromUtf8(""));
+        MainWindow->setTabShape(QTabWidget::Rounded);
+        MainWindow->setUnifiedTitleAndToolBarOnMac(false);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
+        centralwidget->setStyleSheet(QString::fromUtf8("background-image: url(:/res/login-bg.jpg);\n"
+"background-size: cover;\n"
+"height: 100vh;\n"
+"width: 100vw;"));
+        pushButton_2 = new QPushButton(centralwidget);
+        pushButton_2->setObjectName("pushButton_2");
+        pushButton_2->setEnabled(true);
+        pushButton_2->setGeometry(QRect(260, 290, 201, 41));
+        pushButton_2->setStyleSheet(QString::fromUtf8("background: #121212;\n"
+"border: none;\n"
+"color: white;\n"
+"font-size: 18px;\n"
+""));
+        label = new QLabel(centralwidget);
+        label->setObjectName("label");
+        label->setEnabled(true);
+        label->setGeometry(QRect(200, 220, 311, 41));
+        label->setStyleSheet(QString::fromUtf8("background: none;\n"
+"font-size: 30px;\n"
+"font-weight: bold;\n"
+"color: \"white\";\n"
+"text-align: center;"));
         MainWindow->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
+        statusbar->setEnabled(true);
+        statusbar->setContextMenuPolicy(Qt::NoContextMenu);
+        statusbar->setLayoutDirection(Qt::LeftToRight);
         statusbar->setStyleSheet(QString::fromUtf8(""));
         MainWindow->setStatusBar(statusbar);
 
@@ -113,7 +149,9 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Netflix Clone", nullptr));
+        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "HSO", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("MainWindow", "Get Started", nullptr));
+        label->setText(QCoreApplication::translate("MainWindow", "HSO Entertainements", nullptr));
     } // retranslateUi
 
 };
